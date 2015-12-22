@@ -1,1 +1,2 @@
-# fault-toleranceTicketReservationSystem
+# Synopsis
+The system behaves correctly in presence of multiple concurrent clients. My system ensures that the reservation is identical at all servers and any update to the system is done in a mutually exclusive fashion using Lamport's algorithm. Since Lamport's algorithm requires the messages between servers are delivered in FIFO order, my implementation uses TCP protocol. I assume that all servers know the IP addresses of other servers; every server has a file that holds its IP address and port number as well as those of other servers.
